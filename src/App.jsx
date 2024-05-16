@@ -1,11 +1,9 @@
 import React from "react";
+import './styles/main.scss';
 
 const App = () => {
     return (
-        <div>
-            <div>Hi 1</div>
-            <div>Hi 2</div>
-        </div>
+        <h1>Test!</h1>
     )
 }
 

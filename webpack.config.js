@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, './src/index.js'), // Dẫn tới file index.js ta đã tạo
@@ -16,7 +17,11 @@ module.exports = {
       {
         test: /\.css$/, // Sử dụng style-loader, css-loader cho file .css
         use: ["style-loader", "css-loader"]
-      }
+      },
+      {
+        test: /\.(sass|scss)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
     ]
   },
   resolve: {
