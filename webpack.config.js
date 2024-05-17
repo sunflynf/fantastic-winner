@@ -22,6 +22,14 @@ module.exports = {
         test: /\.(sass|scss)$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.(png|svg|jpg|gif)$/i,
+        type: 'asset/resource', // Use asset modules for images
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource', // Use asset modules for fonts
+      },
     ]
   },
   resolve: {
