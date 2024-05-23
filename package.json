@@ -7,7 +7,9 @@
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "update": "update",
+    "autofix": "audit fix"
   },
   "author": "",
   "license": "ISC",
